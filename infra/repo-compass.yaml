@@ -1,0 +1,34 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: compass-demo-repo
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: production
+  source:
+    repoURL: https://github.com/cze-dk/crossplane-github
+    targetRevision: HEAD
+    path: chart
+    helm:
+      releaseName: compass-demo-repo
+      parameters:
+        - name: github.repository
+          value: compass-demo-repo
+        - name: application.name
+          value: compass-demo-repo
+        - name: application.host
+          value: compass-demo-repo.acme.com
+        - name: application.ownerId
+          value: ari:cloud:identity::team/0b56fdaa-37e2-487e-b770-b271bb4e76a2
+        - name: hyperscaler
+          value: aws
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: infra
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+      allowEmpty: true

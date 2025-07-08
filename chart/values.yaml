@@ -4,6 +4,7 @@ github:
 application:
   name: my-app
   host: acme.com
+  ownerId: null
 database:
   version: 14
   size: small # small, medium, large
