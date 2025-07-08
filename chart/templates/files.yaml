@@ -7,7 +7,7 @@ spec:
   forProvider:
     content: |
 {{- if .Values.application.Id }}
-      id: {{ .Values.application.Id }}
+      id: "{{ .Values.application.Id }}"
 {{- end }}
       name: {{ .Values.application.name }}
       slug: {{ .Values.application.name }}
