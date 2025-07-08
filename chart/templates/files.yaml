@@ -201,7 +201,7 @@ spec:
       description: null
       configVersion: 1
       typeId: SERVICE
-      ownerId: none
+      ownerId: {{ .Values.application.ownerId }}
       fields:
         tier: 4
         isMonorepoProject: false
