@@ -192,32 +192,28 @@ spec:
 apiVersion: repo.github.upbound.io/v1alpha1
 kind: RepositoryFile
 metadata:
-  name: {{ .Release.Name }}-compass.yaml
+  name: {{ .Release.Name }}-compass-yaml
 spec:
   forProvider:
     content: |
-      ---
       name: {{ .Values.application.name }}
       slug: {{ .Values.application.name }}
       description: null
       configVersion: 1
       typeId: SERVICE
-      ownerId: {{ .Values.application.ownerId }}
+      ownerId: none
       fields:
         tier: 4
         isMonorepoProject: false
       links:
         - name: null
           type: REPOSITORY
-          url: 'https://github.com/{{ .Values.github.organization }}/{{ .Values.application.name }}''
+          url: 'https://github.com/{{ .Values.github.organization }}/{{ .Values.application.name }}'
       relationships: {}
       labels:
         - 'source:github'
       customFields: null
-
-      # Learn more about formatting compass.yml:
-      # https://go.atlassian.com/compass-yml-format
-    file: compass.yml
+    file: compass.yaml
     repositorySelector:
       matchLabels:
         owner: {{ .Values.github.organization }}
