@@ -1,6 +1,6 @@
 configs:
   secret:
-    argocdServerAdminPassword: "$2a$10$m3eTlEdRen0nS86c5Zph5u/bDFQMcWZYdG3NVdiyaACCqoxLJaz16"
+    argocdServerAdminPassword: "$2y$10$XhmBtqrHeXDUkIaNbIZvrOVkhUtwipbrIX9CVJhDOTToGZgrOGsf"
     argocdServerAdminPasswordMtime: "2021-11-08T15:04:05Z"
   cm:
     application.resourceTrackingMethod: annotation
@@ -12,4 +12,4 @@ server:
     enabled: true
     ingressClassName: traefik
     hosts:
-      - argocd.127.0.0.1.nip.io
+      - argocd.rancher.localhost

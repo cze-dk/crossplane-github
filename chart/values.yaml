@@ -1,5 +1,5 @@
 github:
-  organization: devopsparadox
+  organization: cze-dk
   repository: my-app
 application:
   name: my-app
