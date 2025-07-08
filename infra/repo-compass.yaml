@@ -25,7 +25,7 @@ spec:
         - name: application.ownerId
           value: ari:cloud:identity::team/0b56fdaa-37e2-487e-b770-b271bb4e76a2
         - name: hyperscaler
-          value: aws
+          value: google
   destination:
     server: https://kubernetes.default.svc
     namespace: infra
