@@ -14,6 +14,8 @@ spec:
     helm:
       releaseName: compass-demo-repo-backend
       parameters:
+        - name: application.Id
+          value: ari:cloud:compass:f75bd1c5-809d-4b6c-bc49-c7c7b2772669:component/8059056e-3ccd-46ff-a5ce-136c355f70b2/4ebf9b43-bcde-451d-a7f1-c3d705485781
         - name: github.repository
           value: compass-demo-repo-backend
         - name: application.name
