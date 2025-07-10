@@ -15,7 +15,7 @@ spec:
       releaseName: compass-demo-repo-backend
       parameters:
         - name: application.Id
-          value: ari:cloud:compass:f75bd1c5-809d-4b6c-bc49-c7c7b2772669:component/8059056e-3ccd-46ff-a5ce-136c355f70b2/4ebf9b43-bcde-451d-a7f1-c3d705485781
+          value: ari:cloud:compass:f75bd1c5-809d-4b6c-bc49-c7c7b2772669:component/8059056e-3ccd-46ff-a5ce-136c355f70b2/dcb138da-abfd-4792-8dda-1ce87db6c98f
         - name: github.repository
           value: compass-demo-repo-backend
         - name: application.name
@@ -23,7 +23,7 @@ spec:
         - name: application.host
           value: compass-demo-repo-backend.acme.com
         - name: application.project
-          value: myproject
+          value: compdemo-backend
         - name: application.ownerId
           value: ari:cloud:identity::team/0b56fdaa-37e2-487e-b770-b271bb4e76a2
         - name: hyperscaler
