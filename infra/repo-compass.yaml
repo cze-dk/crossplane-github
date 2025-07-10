@@ -22,6 +22,8 @@ spec:
           value: compass-demo-repo
         - name: application.host
           value: compass-demo-repo.acme.com
+        - name: application.project
+          value: myproject
         - name: application.ownerId
           value: ari:cloud:identity::team/0b56fdaa-37e2-487e-b770-b271bb4e76a2
         - name: hyperscaler
