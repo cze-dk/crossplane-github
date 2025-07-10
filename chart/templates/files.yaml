@@ -10,7 +10,7 @@ spec:
       id: '{{ .Values.application.Id }}'
 {{- end }}
       name: {{ .Values.application.name }}
-      slug: {{ .Values.application.name }}
+      slug: {{ default .Values.application.name .Values.application.project }}
       description: null
       configVersion: 1
       typeId: SERVICE
